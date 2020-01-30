@@ -12,6 +12,7 @@
 		961471D723E2F802006BE271 /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961471D523E2F802006BE271 /* DateCell.swift */; };
 		961471D823E2F802006BE271 /* DateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 961471D623E2F802006BE271 /* DateCell.xib */; };
 		961471DC23E2F9D8006BE271 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961471DB23E2F9D8006BE271 /* CalendarVC.swift */; };
+		961471DE23E33755006BE271 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961471DD23E33755006BE271 /* Utils.swift */; };
 		9624CCF523E06F21007007AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9624CCF423E06F21007007AA /* AppDelegate.swift */; };
 		9624CCF723E06F21007007AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9624CCF623E06F21007007AA /* SceneDelegate.swift */; };
 		9624CCF923E06F21007007AA /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9624CCF823E06F21007007AA /* SignInViewController.swift */; };
@@ -35,6 +36,7 @@
 		961471D523E2F802006BE271 /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
 		961471D623E2F802006BE271 /* DateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateCell.xib; sourceTree = "<group>"; };
 		961471DB23E2F9D8006BE271 /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
+		961471DD23E33755006BE271 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		9624CCF123E06F21007007AA /* ToYou_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToYou_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9624CCF423E06F21007007AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9624CCF623E06F21007007AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				9624CD0223E06F22007007AA /* LaunchScreen.storyboard */,
 				9624CD0523E06F22007007AA /* Info.plist */,
 				9624CCFD23E06F21007007AA /* ToYou_iOS.xcdatamodeld */,
+				961471DD23E33755006BE271 /* Utils.swift */,
 			);
 			path = ToYou_iOS;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				9624CCF723E06F21007007AA /* SceneDelegate.swift in Sources */,
 				9624CD1023E08B41007007AA /* SignUpViewController.swift in Sources */,
 				9624CD1323E08D60007007AA /* MakePartnerViewController.swift in Sources */,
+				961471DE23E33755006BE271 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

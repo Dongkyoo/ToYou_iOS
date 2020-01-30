@@ -41,7 +41,7 @@
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dJZ-t7-ep7">
                                         <rect key="frame" x="0.0" y="88" width="294" height="34"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83Y-xd-aRf">
@@ -87,21 +87,33 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="294" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                        <connections>
+                                                            <action selector="textFieldChanged:" destination="CyQ-jU-67o" eventType="editingChanged" id="u6I-Cf-6DD"/>
+                                                        </connections>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="아이디" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Pa-sy-StR">
                                                         <rect key="frame" x="0.0" y="44" width="294" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                        <connections>
+                                                            <action selector="textFieldChanged:" destination="CyQ-jU-67o" eventType="editingChanged" id="uKk-tq-hOW"/>
+                                                        </connections>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tuc-X0-c0y">
                                                         <rect key="frame" x="0.0" y="88" width="294" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES" textContentType="new-password"/>
+                                                        <connections>
+                                                            <action selector="textFieldChanged:" destination="CyQ-jU-67o" eventType="editingChanged" id="CVj-6h-EwH"/>
+                                                        </connections>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호 확인" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1YX-3s-cqf">
                                                         <rect key="frame" x="0.0" y="132" width="294" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES" textContentType="password"/>
+                                                        <connections>
+                                                            <action selector="textFieldChanged:" destination="CyQ-jU-67o" eventType="editingChanged" id="Ne3-2I-9Km"/>
+                                                        </connections>
                                                     </textField>
                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="idq-Aa-nUb">
                                                         <rect key="frame" x="0.0" y="176" width="294" height="35"/>
@@ -114,10 +126,16 @@
                                                         <rect key="frame" x="0.0" y="220" width="294" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done" textContentType="tel"/>
+                                                        <connections>
+                                                            <action selector="textFieldChanged:" destination="CyQ-jU-67o" eventType="editingChanged" id="AVv-A9-xlb"/>
+                                                        </connections>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8S-ZK-eQ8">
                                                         <rect key="frame" x="0.0" y="264" width="294" height="34"/>
                                                         <state key="normal" title="인증번호 전송"/>
+                                                        <connections>
+                                                            <action selector="clickSendAuthCode:" destination="CyQ-jU-67o" eventType="touchUpInside" id="EXQ-Am-ddk"/>
+                                                        </connections>
                                                     </button>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gfb-pK-Kde">
                                                         <rect key="frame" x="0.0" y="308" width="294" height="34"/>
@@ -126,16 +144,25 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="254" height="34"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" secureTextEntry="YES" textContentType="tel"/>
+                                                                <connections>
+                                                                    <action selector="textFieldChanged:" destination="CyQ-jU-67o" eventType="editingChanged" id="ndi-Z6-4oG"/>
+                                                                </connections>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igc-4c-R1z">
                                                                 <rect key="frame" x="264" y="0.0" width="30" height="34"/>
                                                                 <state key="normal" title="확인"/>
+                                                                <connections>
+                                                                    <action selector="clickAuth:" destination="CyQ-jU-67o" eventType="touchUpInside" id="ZO7-DQ-kDh"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I95-bQ-l7z">
                                                         <rect key="frame" x="0.0" y="352" width="294" height="34"/>
                                                         <state key="normal" title="가입하기"/>
+                                                        <connections>
+                                                            <action selector="clickSubmit:" destination="CyQ-jU-67o" eventType="touchUpInside" id="Owr-Zf-YeW"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -171,6 +198,19 @@
                         <viewLayoutGuide key="safeArea" id="6c7-zY-iYA"/>
                     </view>
                     <navigationItem key="navigationItem" id="AT9-tO-rwX"/>
+                    <connections>
+                        <outlet property="authCodeSubmitButton" destination="Igc-4c-R1z" id="hCN-vm-4XI"/>
+                        <outlet property="authCodeTextField" destination="zMp-aL-dp2" id="pQA-5h-NCF"/>
+                        <outlet property="confirmTextField" destination="1YX-3s-cqf" id="esF-lX-bIL"/>
+                        <outlet property="genderSegmentedControl" destination="idq-Aa-nUb" id="5mH-Nr-u1x"/>
+                        <outlet property="idTextField" destination="5Pa-sy-StR" id="Ibq-ja-JYa"/>
+                        <outlet property="nameTextField" destination="W2F-OR-uqB" id="ge4-u3-xwN"/>
+                        <outlet property="passwordTextField" destination="tuc-X0-c0y" id="NbG-Kz-sVv"/>
+                        <outlet property="phoneNumberTextField" destination="W3O-s0-lb3" id="MQW-k3-2FW"/>
+                        <outlet property="sendAuthCodeButton" destination="f8S-ZK-eQ8" id="611-SM-G9a"/>
+                        <outlet property="submitButton" destination="I95-bQ-l7z" id="okP-Uq-OPQ"/>
+                        <outletCollection property="textFieldList" destination="zMp-aL-dp2" collectionClass="NSMutableArray" id="doE-eY-3MM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TLG-kE-Reu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
