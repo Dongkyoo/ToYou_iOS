@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SignUpViewController: UIViewController {
     
@@ -26,9 +27,28 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var authCodeSubmitButton: UIButton!
     
     private var authenticated = false
+    private var verificationID = ""
     
     @IBAction func clickSendAuthCode(_ sender: UIButton) {
+        guard let phoneNumber = phoneNumberTextField.text else {
+            return
+        }
+//        let phoneNumber = "+8210-3367-7355"
         
+        PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber, uiDelegate: nil) {
+            (verificationID, error) in
+            if let error = error {
+                print(error)
+                return
+            }
+            
+            // 인증메세지 전송 성공
+            guard let verificationID = verificationID else {
+                return
+            }
+            
+            self.verificationID = verificationID
+        }
     }
     
     @IBAction func clickSubmit(_ sender: UIButton) {
@@ -36,7 +56,22 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func clickAuth(_ sender: Any) {
+        guard let authCode = authCodeTextField.text else {
+            return
+        }
         
+        let credential = PhoneAuthProvider.provider().credential(withVerificationID: verificationID, verificationCode: authCode)
+        Auth.auth().signIn(with: credential) {
+            (authResult, error) in
+            if let error = error {
+                print("Firebase 휴대폰 인증 로그인 에러 \(error)")
+                self.authenticated = false
+                return
+            }
+            
+            // 로그인 성공?
+            self.authenticated = true
+        }
     }
     
     @IBAction func textFieldChanged(_ sender: UITextField) {
@@ -97,7 +132,7 @@ class SignUpViewController: UIViewController {
             return
         }
         
-        if authCode.count > 0 {
+        if authCode.count == 6 {
             authCodeSubmitButton.isEnabled = true
         } else {
             authCodeSubmitButton.isEnabled = false
