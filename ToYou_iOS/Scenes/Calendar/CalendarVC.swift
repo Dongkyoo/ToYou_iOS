@@ -21,7 +21,7 @@ extension CalendarVC: JTAppleCalendarViewDataSource {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         
-        return ConfigurationParameters(startDate: dateFormatter.date(from: "2020-01-01")!, endDate: dateFormatter.date(from: "2100-01-01")!)
+        return ConfigurationParameters(startDate: dateFormatter.date(from: "2020-01-01")!, endDate: dateFormatter.date(from: "2100-12-31")!)
     }
 }
 
