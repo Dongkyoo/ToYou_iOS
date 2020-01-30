@@ -10,12 +10,14 @@ import UIKit
 
 class CardView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
-        // Drawing code
+        super.draw(rect)
+        
+        layer.cornerRadius = 5
+        layer.masksToBounds = false
+        layer.shadowOffset = CGSize(width: -15, height: 20)
+        layer.shadowRadius = 5
+        layer.shadowOpacity = 0.5
     }
-    */
 
 }
