@@ -7,12 +7,10 @@
 //
 
 import UIKit
+import JTAppleCalendar
 
-class DateCell: UICollectionViewCell {
+class DateCell: JTAppleCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
+    @IBOutlet weak var dateLabel: UILabel!
+    
 }

@@ -11,6 +11,7 @@
 		961471D123E2E2C8006BE271 /* SpeechBalloonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961471D023E2E2C8006BE271 /* SpeechBalloonView.swift */; };
 		961471D723E2F802006BE271 /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961471D523E2F802006BE271 /* DateCell.swift */; };
 		961471D823E2F802006BE271 /* DateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 961471D623E2F802006BE271 /* DateCell.xib */; };
+		961471DC23E2F9D8006BE271 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961471DB23E2F9D8006BE271 /* CalendarVC.swift */; };
 		9624CCF523E06F21007007AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9624CCF423E06F21007007AA /* AppDelegate.swift */; };
 		9624CCF723E06F21007007AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9624CCF623E06F21007007AA /* SceneDelegate.swift */; };
 		9624CCF923E06F21007007AA /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9624CCF823E06F21007007AA /* SignInViewController.swift */; };
@@ -33,6 +34,7 @@
 		961471D023E2E2C8006BE271 /* SpeechBalloonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechBalloonView.swift; sourceTree = "<group>"; };
 		961471D523E2F802006BE271 /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
 		961471D623E2F802006BE271 /* DateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateCell.xib; sourceTree = "<group>"; };
+		961471DB23E2F9D8006BE271 /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
 		9624CCF123E06F21007007AA /* ToYou_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToYou_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9624CCF423E06F21007007AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9624CCF623E06F21007007AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,26 @@
 			path = CalendarView;
 			sourceTree = "<group>";
 		};
+		961471D923E2F92B006BE271 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				961471DB23E2F9D8006BE271 /* CalendarVC.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		961471DA23E2F9A1006BE271 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				961471D923E2F92B006BE271 /* Calendar */,
+				961471CD23E2DE59006BE271 /* Chat */,
+				9624CD0E23E08B1E007007AA /* SignUp */,
+				9624CD0D23E08B15007007AA /* SignIn */,
+				9624CD1123E08D47007007AA /* MakePartner */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		9624CCE823E06F21007007AA = {
 			isa = PBXGroup;
 			children = (
@@ -118,12 +140,9 @@
 		9624CCF323E06F21007007AA /* ToYou_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				961471DA23E2F9A1006BE271 /* Scenes */,
 				961471D423E2F3D9006BE271 /* CalendarView */,
-				961471CD23E2DE59006BE271 /* Chat */,
 				9624CD1623E09BE8007007AA /* CardView */,
-				9624CD1123E08D47007007AA /* MakePartner */,
-				9624CD0E23E08B1E007007AA /* SignUp */,
-				9624CD0D23E08B15007007AA /* SignIn */,
 				9624CD0B23E07078007007AA /* GoogleService-Info.plist */,
 				9624CCF423E06F21007007AA /* AppDelegate.swift */,
 				9624CCF623E06F21007007AA /* SceneDelegate.swift */,
@@ -289,6 +308,7 @@
 			files = (
 				961471CF23E2DE73006BE271 /* ChatVC.swift in Sources */,
 				961471D723E2F802006BE271 /* DateCell.swift in Sources */,
+				961471DC23E2F9D8006BE271 /* CalendarVC.swift in Sources */,
 				961471D123E2E2C8006BE271 /* SpeechBalloonView.swift in Sources */,
 				9624CD1823E09C0A007007AA /* CardView.swift in Sources */,
 				9624CCFF23E06F21007007AA /* ToYou_iOS.xcdatamodeld in Sources */,
