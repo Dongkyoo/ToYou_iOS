@@ -26,6 +26,7 @@
 		9624CD1523E08D8B007007AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9624CD1423E08D8B007007AA /* Main.storyboard */; };
 		9624CD1823E09C0A007007AA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9624CD1723E09C0A007007AA /* CardView.swift */; };
 		9689CEC723E5C78400F056F4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9689CEC623E5C78400F056F4 /* README.md */; };
+		9689CEC923E5E0D600F056F4 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9689CEC823E5E0D600F056F4 /* KakaoOpenSDK.framework */; };
 		E40DFF00468B0E691A0621E2 /* Pods_ToYou_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F441FF80095026657DC363 /* Pods_ToYou_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,8 @@
 		9624CD1423E08D8B007007AA /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9624CD1723E09C0A007007AA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		9689CEC623E5C78400F056F4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9689CEC823E5E0D600F056F4 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
+		9689CECA23E5E3A700F056F4 /* KakaoOpenSDK-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KakaoOpenSDK-Bridging-Header.h"; sourceTree = "<group>"; };
 		B5F441FF80095026657DC363 /* Pods_ToYou_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToYou_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -63,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E40DFF00468B0E691A0621E2 /* Pods_ToYou_iOS.framework in Frameworks */,
+				9689CEC923E5E0D600F056F4 /* KakaoOpenSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +85,7 @@
 		6DC9179E20A9E8B686AD7F91 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9689CEC823E5E0D600F056F4 /* KakaoOpenSDK.framework */,
 				B5F441FF80095026657DC363 /* Pods_ToYou_iOS.framework */,
 			);
 			name = Frameworks;
@@ -146,6 +151,7 @@
 		9624CCF323E06F21007007AA /* ToYou_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				9689CECA23E5E3A700F056F4 /* KakaoOpenSDK-Bridging-Header.h */,
 				961471DF23E34F92006BE271 /* ToYou_iOS.entitlements */,
 				961471DA23E2F9A1006BE271 /* Scenes */,
 				961471D423E2F3D9006BE271 /* CalendarView */,
@@ -474,11 +480,89 @@
 				CODE_SIGN_ENTITLEMENTS = ToYou_iOS/ToYou_iOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8S882ZSFK3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ToYou_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"FIRAnalyticsConnector\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseAuth\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseFirestore\"",
+					"-framework",
+					"\"FirebaseFirestoreSwift\"",
+					"-framework",
+					"\"FirebaseInstallations\"",
+					"-framework",
+					"\"FirebaseInstanceID\"",
+					"-framework",
+					"\"FirebaseMessaging\"",
+					"-framework",
+					"\"FirebaseStorage\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GTMSessionFetcher\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleDataTransport\"",
+					"-framework",
+					"\"GoogleDataTransportCCTSupport\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"JTAppleCalendar\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"absl\"",
+					"-framework",
+					"\"grpc\"",
+					"-framework",
+					"\"grpcpp\"",
+					"-framework",
+					"\"leveldb\"",
+					"-framework",
+					"\"nanopb\"",
+					"-framework",
+					"\"openssl_grpc\"",
+					"-framework",
+					"\"protobuf\"",
+					"-weak_framework",
+					"\"UserNotifications\"",
+					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dongkyoo.ToYou-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -495,11 +579,89 @@
 				CODE_SIGN_ENTITLEMENTS = ToYou_iOS/ToYou_iOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8S882ZSFK3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ToYou_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"FIRAnalyticsConnector\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseAuth\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseFirestore\"",
+					"-framework",
+					"\"FirebaseFirestoreSwift\"",
+					"-framework",
+					"\"FirebaseInstallations\"",
+					"-framework",
+					"\"FirebaseInstanceID\"",
+					"-framework",
+					"\"FirebaseMessaging\"",
+					"-framework",
+					"\"FirebaseStorage\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GTMSessionFetcher\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleDataTransport\"",
+					"-framework",
+					"\"GoogleDataTransportCCTSupport\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"JTAppleCalendar\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"absl\"",
+					"-framework",
+					"\"grpc\"",
+					"-framework",
+					"\"grpcpp\"",
+					"-framework",
+					"\"leveldb\"",
+					"-framework",
+					"\"nanopb\"",
+					"-framework",
+					"\"openssl_grpc\"",
+					"-framework",
+					"\"protobuf\"",
+					"-weak_framework",
+					"\"UserNotifications\"",
+					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dongkyoo.ToYou-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
