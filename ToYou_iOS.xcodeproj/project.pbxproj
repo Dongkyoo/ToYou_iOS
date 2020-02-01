@@ -25,6 +25,7 @@
 		9624CD1323E08D60007007AA /* MakePartnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9624CD1223E08D60007007AA /* MakePartnerViewController.swift */; };
 		9624CD1523E08D8B007007AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9624CD1423E08D8B007007AA /* Main.storyboard */; };
 		9624CD1823E09C0A007007AA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9624CD1723E09C0A007007AA /* CardView.swift */; };
+		9689CEC723E5C78400F056F4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9689CEC623E5C78400F056F4 /* README.md */; };
 		E40DFF00468B0E691A0621E2 /* Pods_ToYou_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F441FF80095026657DC363 /* Pods_ToYou_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		9624CD1223E08D60007007AA /* MakePartnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePartnerViewController.swift; sourceTree = "<group>"; };
 		9624CD1423E08D8B007007AA /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9624CD1723E09C0A007007AA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		9689CEC623E5C78400F056F4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B5F441FF80095026657DC363 /* Pods_ToYou_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToYou_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -125,6 +127,7 @@
 		9624CCE823E06F21007007AA = {
 			isa = PBXGroup;
 			children = (
+				9689CEC623E5C78400F056F4 /* README.md */,
 				9624CCF323E06F21007007AA /* ToYou_iOS */,
 				9624CCF223E06F21007007AA /* Products */,
 				6956C654EAE568F54F78F1EE /* Pods */,
@@ -256,6 +259,7 @@
 				9624CD0423E06F22007007AA /* LaunchScreen.storyboard in Resources */,
 				9624CD1523E08D8B007007AA /* Main.storyboard in Resources */,
 				9624CD0C23E07078007007AA /* GoogleService-Info.plist in Resources */,
+				9689CEC723E5C78400F056F4 /* README.md in Resources */,
 				961471D823E2F802006BE271 /* DateCell.xib in Resources */,
 				9624CD0123E06F22007007AA /* Assets.xcassets in Resources */,
 				9624CCFC23E06F21007007AA /* Entrance.storyboard in Resources */,

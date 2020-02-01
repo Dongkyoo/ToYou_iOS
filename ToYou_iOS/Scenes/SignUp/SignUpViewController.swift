@@ -29,6 +29,7 @@ class SignUpViewController: UIViewController {
     private var authenticated = false
     private var verificationID = ""
     
+    // 인증번호 전송 버튼 클릭
     @IBAction func clickSendAuthCode(_ sender: UIButton) {
         guard let phoneNumber = phoneNumberTextField.text else {
             return
@@ -51,10 +52,12 @@ class SignUpViewController: UIViewController {
         }
     }
     
+    // 가입하기 버튼 클릭
     @IBAction func clickSubmit(_ sender: UIButton) {
         
     }
     
+    // 인증번호 확인 버튼 클릭
     @IBAction func clickAuth(_ sender: Any) {
         guard let authCode = authCodeTextField.text else {
             return
