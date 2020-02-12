@@ -25,8 +25,18 @@
 		9624CD1323E08D60007007AA /* MakePartnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9624CD1223E08D60007007AA /* MakePartnerViewController.swift */; };
 		9624CD1523E08D8B007007AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9624CD1423E08D8B007007AA /* Main.storyboard */; };
 		9624CD1823E09C0A007007AA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9624CD1723E09C0A007007AA /* CardView.swift */; };
+		9687D95D23EB22A000A0605A /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9687D95C23EB22A000A0605A /* UIViewController.swift */; };
+		9687D95F23EB239B00A0605A /* FirebaseConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9687D95E23EB239B00A0605A /* FirebaseConst.swift */; };
 		9689CEC723E5C78400F056F4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9689CEC623E5C78400F056F4 /* README.md */; };
 		9689CEC923E5E0D600F056F4 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9689CEC823E5E0D600F056F4 /* KakaoOpenSDK.framework */; };
+		9689CECD23E69B5F00F056F4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9689CECC23E69B5F00F056F4 /* User.swift */; };
+		9689CECF23E69C6D00F056F4 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9689CECE23E69C6D00F056F4 /* Gender.swift */; };
+		96908C6523F3E90100384AFF /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96908C6423F3E90100384AFF /* MainTabBarController.swift */; };
+		96908C6723F3F16400384AFF /* AuthPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96908C6623F3F16400384AFF /* AuthPhoneNumberViewController.swift */; };
+		96908C6923F3F1F600384AFF /* RequestAuthPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96908C6823F3F1F600384AFF /* RequestAuthPhoneNumberViewController.swift */; };
+		96908C6B23F4069200384AFF /* EnterNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96908C6A23F4069200384AFF /* EnterNameViewController.swift */; };
+		96908C6D23F4085800384AFF /* AdditionalUserInfoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96908C6C23F4085800384AFF /* AdditionalUserInfoDelegate.swift */; };
+		96908C7123F40B2600384AFF /* AdditionalUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96908C7023F40B2600384AFF /* AdditionalUserInfoViewController.swift */; };
 		E40DFF00468B0E691A0621E2 /* Pods_ToYou_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F441FF80095026657DC363 /* Pods_ToYou_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,9 +64,19 @@
 		9624CD1223E08D60007007AA /* MakePartnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePartnerViewController.swift; sourceTree = "<group>"; };
 		9624CD1423E08D8B007007AA /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9624CD1723E09C0A007007AA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		9687D95C23EB22A000A0605A /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		9687D95E23EB239B00A0605A /* FirebaseConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseConst.swift; sourceTree = "<group>"; };
 		9689CEC623E5C78400F056F4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9689CEC823E5E0D600F056F4 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		9689CECA23E5E3A700F056F4 /* KakaoOpenSDK-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KakaoOpenSDK-Bridging-Header.h"; sourceTree = "<group>"; };
+		9689CECC23E69B5F00F056F4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9689CECE23E69C6D00F056F4 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		96908C6423F3E90100384AFF /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		96908C6623F3F16400384AFF /* AuthPhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPhoneNumberViewController.swift; sourceTree = "<group>"; };
+		96908C6823F3F1F600384AFF /* RequestAuthPhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestAuthPhoneNumberViewController.swift; sourceTree = "<group>"; };
+		96908C6A23F4069200384AFF /* EnterNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNameViewController.swift; sourceTree = "<group>"; };
+		96908C6C23F4085800384AFF /* AdditionalUserInfoDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalUserInfoDelegate.swift; sourceTree = "<group>"; };
+		96908C7023F40B2600384AFF /* AdditionalUserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalUserInfoViewController.swift; sourceTree = "<group>"; };
 		B5F441FF80095026657DC363 /* Pods_ToYou_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToYou_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -120,6 +140,7 @@
 		961471DA23E2F9A1006BE271 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				96908C6323F3E8CC00384AFF /* Main */,
 				961471D923E2F92B006BE271 /* Calendar */,
 				961471CD23E2DE59006BE271 /* Chat */,
 				9624CD0E23E08B1E007007AA /* SignUp */,
@@ -151,6 +172,7 @@
 		9624CCF323E06F21007007AA /* ToYou_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				9689CECB23E69B4D00F056F4 /* VOs */,
 				9689CECA23E5E3A700F056F4 /* KakaoOpenSDK-Bridging-Header.h */,
 				961471DF23E34F92006BE271 /* ToYou_iOS.entitlements */,
 				961471DA23E2F9A1006BE271 /* Scenes */,
@@ -166,6 +188,7 @@
 				9624CD0523E06F22007007AA /* Info.plist */,
 				9624CCFD23E06F21007007AA /* ToYou_iOS.xcdatamodeld */,
 				961471DD23E33755006BE271 /* Utils.swift */,
+				9687D95C23EB22A000A0605A /* UIViewController.swift */,
 			);
 			path = ToYou_iOS;
 			sourceTree = "<group>";
@@ -182,6 +205,11 @@
 			isa = PBXGroup;
 			children = (
 				9624CD0F23E08B41007007AA /* SignUpViewController.swift */,
+				96908C6623F3F16400384AFF /* AuthPhoneNumberViewController.swift */,
+				96908C6823F3F1F600384AFF /* RequestAuthPhoneNumberViewController.swift */,
+				96908C6A23F4069200384AFF /* EnterNameViewController.swift */,
+				96908C6C23F4085800384AFF /* AdditionalUserInfoDelegate.swift */,
+				96908C7023F40B2600384AFF /* AdditionalUserInfoViewController.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -200,6 +228,24 @@
 				9624CD1723E09C0A007007AA /* CardView.swift */,
 			);
 			path = CardView;
+			sourceTree = "<group>";
+		};
+		9689CECB23E69B4D00F056F4 /* VOs */ = {
+			isa = PBXGroup;
+			children = (
+				9689CECC23E69B5F00F056F4 /* User.swift */,
+				9689CECE23E69C6D00F056F4 /* Gender.swift */,
+				9687D95E23EB239B00A0605A /* FirebaseConst.swift */,
+			);
+			path = VOs;
+			sourceTree = "<group>";
+		};
+		96908C6323F3E8CC00384AFF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				96908C6423F3E90100384AFF /* MainTabBarController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,18 +367,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9689CECD23E69B5F00F056F4 /* User.swift in Sources */,
 				961471CF23E2DE73006BE271 /* ChatVC.swift in Sources */,
 				961471D723E2F802006BE271 /* DateCell.swift in Sources */,
+				96908C6D23F4085800384AFF /* AdditionalUserInfoDelegate.swift in Sources */,
 				961471DC23E2F9D8006BE271 /* CalendarVC.swift in Sources */,
 				961471D123E2E2C8006BE271 /* SpeechBalloonView.swift in Sources */,
 				9624CD1823E09C0A007007AA /* CardView.swift in Sources */,
+				9687D95F23EB239B00A0605A /* FirebaseConst.swift in Sources */,
+				9689CECF23E69C6D00F056F4 /* Gender.swift in Sources */,
+				96908C6723F3F16400384AFF /* AuthPhoneNumberViewController.swift in Sources */,
 				9624CCFF23E06F21007007AA /* ToYou_iOS.xcdatamodeld in Sources */,
+				96908C6923F3F1F600384AFF /* RequestAuthPhoneNumberViewController.swift in Sources */,
 				9624CCF923E06F21007007AA /* SignInViewController.swift in Sources */,
 				9624CCF523E06F21007007AA /* AppDelegate.swift in Sources */,
 				9624CCF723E06F21007007AA /* SceneDelegate.swift in Sources */,
 				9624CD1023E08B41007007AA /* SignUpViewController.swift in Sources */,
 				9624CD1323E08D60007007AA /* MakePartnerViewController.swift in Sources */,
 				961471DE23E33755006BE271 /* Utils.swift in Sources */,
+				96908C7123F40B2600384AFF /* AdditionalUserInfoViewController.swift in Sources */,
+				9687D95D23EB22A000A0605A /* UIViewController.swift in Sources */,
+				96908C6B23F4069200384AFF /* EnterNameViewController.swift in Sources */,
+				96908C6523F3E90100384AFF /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

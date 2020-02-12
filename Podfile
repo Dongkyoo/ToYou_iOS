@@ -10,12 +10,10 @@ target 'ToYou_iOS' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Storage'
   pod 'Firebase/Messaging'
-  
-  pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
-
-  # Optionally, include the Swift extensions if you're using Swift.
+  pod 'Firebase/Firestore'
   pod 'FirebaseFirestoreSwift'
+  
   pod 'JTAppleCalendar', '~> 7.1'
 
 end

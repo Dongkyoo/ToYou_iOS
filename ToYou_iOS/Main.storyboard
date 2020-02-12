@@ -474,10 +474,10 @@
             </objects>
             <point key="canvasLocation" x="-3759.420289855073" y="-216.29464285714286"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="TYG-35-TM4">
             <objects>
-                <tabBarController id="Ry5-RG-us9" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarController" id="Ry5-RG-us9" customClass="MainTabBarController" customModule="ToYou_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mhp-Sg-eLh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

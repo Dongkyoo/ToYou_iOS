@@ -15,7 +15,7 @@ ${variable} = 변수명. 예를 들어 ${userName} 은 "이동규" 로 치환해
       |  name  | String  |  이름 |
       |  partner |  String |  여친남친 아이디 |
       | createdAt  | Datetime  |  가입 일자 |
-      | gender | Boolean  |  성별(남자 : true, 여자 : false) |
+      | gender | Int  |  성별(남자 : 1, 여자 : 0) |
       
 - Events (C) : 캘린더 일정 리스트 
     -  ${id} (D) - Int
