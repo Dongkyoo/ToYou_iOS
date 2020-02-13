@@ -184,3 +184,5 @@ Dependencies/
 # End of https://www.gitignore.io/api/xcode,macos,swift,firebase,cocoapods,objective-c
 
 *.p8
+
+GoogleServicece-Info.plist

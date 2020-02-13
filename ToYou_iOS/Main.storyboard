@@ -458,7 +458,9 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <color key="backgroundColor" white="0.92000000000000004" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="zBs-0c-obN" firstAttribute="width" secondItem="Ht5-UZ-Av7" secondAttribute="width" id="Ky7-LA-teY"/>
                             <constraint firstItem="zBs-0c-obN" firstAttribute="leading" secondItem="wP0-dc-UBG" secondAttribute="leading" id="Nib-Qx-2hN"/>
                             <constraint firstItem="wP0-dc-UBG" firstAttribute="bottom" secondItem="zBs-0c-obN" secondAttribute="bottom" id="WWj-er-2bj"/>
                             <constraint firstItem="wP0-dc-UBG" firstAttribute="trailing" secondItem="zBs-0c-obN" secondAttribute="trailing" id="XXr-pK-KnJ"/>
