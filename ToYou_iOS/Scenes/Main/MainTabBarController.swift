@@ -11,20 +11,29 @@ import UIKit
 class MainTabBarController: UITabBarController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        do {
+            guard let userData = UserDefaults.standard.object(forKey: USER) as? Data else {
+                return
+            }
+            
+            let user = try PropertyListDecoder().decode(User.self, from: userData)
+            self.appDelegate().user = user
+        } catch let error {
+            print("자동로그인 에러 \(error)")
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        if !checkSignIn() {
+            let storyboard = UIStoryboard(name: "Entrance", bundle: .main)
+            let controller = storyboard.instantiateViewController(identifier: "SignInViewController")
+            controller.modalPresentationStyle = .fullScreen
+            self.present(controller, animated: true, completion: nil)
+        }
     }
-    */
-
+    
+    // MARK: 로그인 확인하는 메소드
+    private func checkSignIn() -> Bool {
+        return self.appDelegate().user != nil
+    }
 }

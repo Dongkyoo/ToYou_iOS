@@ -2,24 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>KAKAO_APP_KEY</key>
-	<string>f9331c7e438f668359b6a5139b687e00</string>
-    <key>LSApplicationQueriesSchemes</key>
-    <array>
-        <!-- 공통 -->
-        <string>kakaof9331c7e438f668359b6a5139b687e00</string>
-
-        <!-- 간편로그인 -->
-        <string>kakaokompassauth</string>
-        <string>storykompassauth</string>
-
-        <!-- 카카오톡링크 -->
-        <string>kakaolink</string>
-        <string>kakaotalk-5.9.7</string>
-
-        <!-- 카카오스토리링크 -->
-        <string>storylink</string>
-    </array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -55,6 +37,17 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>KAKAO_APP_KEY</key>
+	<string>f9331c7e438f668359b6a5139b687e00</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>kakaof9331c7e438f668359b6a5139b687e00</string>
+		<string>kakaokompassauth</string>
+		<string>storykompassauth</string>
+		<string>kakaolink</string>
+		<string>kakaotalk-5.9.7</string>
+		<string>storylink</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIApplicationSceneManifest</key>
@@ -71,7 +64,7 @@
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
-					<string>Entrance</string>
+					<string>Main</string>
 				</dict>
 			</array>
 		</dict>

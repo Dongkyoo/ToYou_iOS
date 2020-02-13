@@ -139,21 +139,6 @@ class SignInViewController: UIViewController, AdditionalUserInfoDelegate {
         }
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        do {
-            guard let userData = UserDefaults.standard.object(forKey: USER) as? Data else {
-                return
-            }
-            
-            let user = try PropertyListDecoder().decode(User.self, from: userData)
-            signIn(user: user)
-        } catch let error {
-            print("자동로그인 에러 \(error)")
-        }
-    }
-    
     // MARK: 회원가입, additionalUserInfoControllerList 가 nil이면 회원가입을 정상적으로 시도한다.
     private func signUp(_ additionalUserInfoControllerList: [AdditionalUserInfoViewController]?) {
         if let additionalUserInfoControllerList = additionalUserInfoControllerList {
@@ -216,9 +201,6 @@ class SignInViewController: UIViewController, AdditionalUserInfoDelegate {
     
     // MARK: 메인화면으로 이동
     private func moveToMainScene() {
-        let storyboard = UIStoryboard(name: "Main", bundle: .main)
-        let controller = storyboard.instantiateViewController(identifier: "MainTabBarController")
-        self.present(controller, animated: true, completion: nil)
-        self.presentingViewController?.dismiss(animated: false, completion: nil)
+        self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
 }
